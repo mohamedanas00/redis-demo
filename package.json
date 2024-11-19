@@ -4,7 +4,8 @@
     "express": "^4.21.1",
     "init": "^0.1.2",
     "mongoose": "^8.8.2",
-    "redis": "^4.7.0"
+    "redis": "^4.7.0",
+    "redis-demo": "file:"
   },
   "name": "redis-demo",
   "version": "1.0.0",
