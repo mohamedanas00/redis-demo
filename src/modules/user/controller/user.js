@@ -1,3 +1,12 @@
+import Redis from "redis";
+import userModel from "../../../../DB/model/user.model.js";
+const client = Redis.createClient();
+client.connect();
+// Handle Redis connection errors
+client.on("error", (err) => {
+  console.error("Redis Client Error", err);
+});
+
 export const addUser = async (req, res) => {
   try {
     const { name, email, age, collage } = req.body;
